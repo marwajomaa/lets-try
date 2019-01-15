@@ -1,0 +1,33 @@
+.App {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: 100px auto;
+  grid-template-areas: "s s"
+                       "d l";
+}
+
+.search-bar {
+  grid-area: s;
+  margin: 0 auto;
+  margin-top: 30px
+}
+
+.vedio_details {
+  grid-area: d;
+  display: flex;
+  left: 20px;
+  flex-direction: column;
+}
+
+.vedio_list {
+  grid-area: l;
+  display: flex;
+  flex-direction: column;
+}
+
+.iframe {
+  width: 751px;
+  height: 422px;
+  left: 0px;
+  top: 0px;
+}
