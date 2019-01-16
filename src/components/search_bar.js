@@ -7,16 +7,17 @@ class SearchBar extends Component {
   }
 
   handleChange =(e)=>{
-    this.setstate({search: e.target.value})
-    setTimeout(()=>console.log(this.state), 3000);
+    const search = e.target.value;
+    this.setState({search});
+    this.props.onCurrentVideo(this.state.search)
   }
 
   render(){
-   const handleChange = this;
+   const {handleChange} = this;
 
   return(
     <div className="search-bar">
-     <input onChange={()=>handleChange()} />
+     <input type="input" onChange={handleChange} />
      <p>{this.state.search}</p>
     </div>
   )

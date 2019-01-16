@@ -9,21 +9,32 @@ const API_KEY = "AIzaSyBpoZSToSJXcM1XuBqALzKUnPg9zxLpxkE";
 
 class App extends Component {
   state = {
-    videos: []
+    videos: [],
+    video: null
   }
 
- componentDidMount(){
-  YTSearch({key:API_KEY, term:'تفائلو بالخير بتلاقوه'}, (videos) => {
-    this.setState({ videos });
-    console.log(this.state.videos)
+//  componentDidMount(){
+//   YTSearch({key:API_KEY, term:'تفائلو بالخير بتلاقوه'}, (videos) => {
+//     this.setState({
+//       videos: videos,
+//     });
+//   })
+// }
+
+onCurrentVideo = (searchValue) => {
+  YTSearch({key:API_KEY, term:searchValue}, (videos) => {
+    this.setState({
+      videos: videos,
+    });
   })
 }
   render() {
+    const {onCurrentVideo} = this;
     const video = this.state.videos[0]
     const {videos} = this.state;
     return (
       <div className="App">
-        <SearchBar />
+        <SearchBar onCurrentVideo = {onCurrentVideo}/>
         <VideoDetails  video = { video } />
         <VideoList videos = { videos }/>
       </div>

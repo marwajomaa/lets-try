@@ -9,7 +9,7 @@ const VideoList = ({videos})=> {
   return(
     <div className="vedio_list">
      <ul>
-    {videos.map(video=> <VideoItem video={video} />)}
+    {videos.map(video=> <VideoItem key={video.etag} video={video} />)}
      </ul>
     </div>
   )
