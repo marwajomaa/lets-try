@@ -5,7 +5,7 @@ import VideoItem from './video_list_item'
 const VideoList = ({videos})=> {
   if(!videos){
     return 'loading'
-
+}
   return(
     <div className="vedio_list">
      <ul>
@@ -13,6 +13,7 @@ const VideoList = ({videos})=> {
      </ul>
     </div>
   )
+
 }
 
 export default VideoList;
