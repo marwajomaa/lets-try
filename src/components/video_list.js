@@ -5,11 +5,6 @@ import VideoItem from './video_list_item'
 const VideoList = ({videos})=> {
   if(!videos){
     return 'loading'
-  }
-  //
-  // const VideoItems = videos.map(video => {
-  //   return <VideoItem key={video.etag} video={video} />
-  // });
 
   return(
     <div className="vedio_list">
