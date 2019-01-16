@@ -20,12 +20,12 @@ class App extends Component {
 }
   render() {
     const video = this.state.videos[0]
-    const videos = this.state;
+    const {videos} = this.state;
     return (
       <div className="App">
         <SearchBar />
         <VideoDetails  video = { video } />
-        <VideoList videos = { videos}/>
+        <VideoList videos = { videos }/>
       </div>
     );
   }

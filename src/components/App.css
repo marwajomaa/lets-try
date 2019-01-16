@@ -31,3 +31,24 @@
   left: 0px;
   top: 0px;
 }
+
+.vedio_item {
+  display: flex;
+  flex-direction: row;
+}
+
+.video_title p{
+  font-size: 14px;
+  margin-top: 0;
+  margin-left: 10px
+}
+
+.video_image {
+  width: 168px;
+  height: 94px;
+}
+
+.list_item {
+  list-style: none;
+  margin-bottom: 10px;
+}

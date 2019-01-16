@@ -16,7 +16,7 @@ class SearchBar extends Component {
 
   return(
     <div className="search-bar">
-     <input onChange={handleChange} />
+     <input onChange={()=>handleChange()} />
      <p>{this.state.search}</p>
     </div>
   )
