@@ -9,7 +9,7 @@ class SearchBar extends Component {
   handleChange =(e)=>{
     const search = e.target.value;
     this.setState({search});
-    this.props.onCurrentVideo(this.state.search)
+    this.props.onVideoSearch(this.state.search)
   }
 
   render(){
@@ -18,7 +18,6 @@ class SearchBar extends Component {
   return(
     <div className="search-bar">
      <input type="input" onChange={handleChange} />
-     <p>{this.state.search}</p>
     </div>
   )
 }

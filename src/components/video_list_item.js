@@ -5,7 +5,7 @@ const VideoItem = ({video})=>{
 const { title } = video.snippet;
 const { url } = video.snippet.thumbnails.medium;
   return(
-    <li className="list_item">
+    <li className="list_item" >
       <div className="vedio_item">
       <div className="video_img">
        <img className="video_image" src={ url } alt={title} />

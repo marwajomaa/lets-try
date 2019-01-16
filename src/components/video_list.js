@@ -6,6 +6,7 @@ const VideoList = ({videos})=> {
   if(!videos){
     return 'loading'
 }
+
   return(
     <div className="vedio_list">
      <ul>
