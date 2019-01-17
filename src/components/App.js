@@ -13,6 +13,10 @@ class App extends Component {
     currentVideo: null,
   }
 
+  componentDidMount(){
+  this.onVideoSearch("hello")
+}
+
 onVideoSearch = (searchValue) => {
   YTSearch({key:API_KEY, term:searchValue}, (videos) => {
     this.setState({
@@ -22,15 +26,18 @@ onVideoSearch = (searchValue) => {
   })
 }
 
+onSelectedVideo = (currentVideo)=>{
+  this.setState({ currentVideo })
+}
 
   render() {
-    const {onVideoSearch} = this;
+    const {onVideoSearch, onSelectedVideo} = this;
     const {videos, currentVideo} = this.state;
     return (
       <div className="App">
         <SearchBar onVideoSearch = {onVideoSearch}/>
         <VideoDetails  video = { currentVideo } />
-        <VideoList  videos = { videos }/>
+        <VideoList  onSelectedVideo={onSelectedVideo} videos = { videos }/>
       </div>
     );
   }
