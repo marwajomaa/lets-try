@@ -9,13 +9,15 @@
 .search-bar {
   grid-area: s;
   margin: 0 auto;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 .search-bar input {
   width: 500px;
-  height: 30px;
+  height: 40px;
   text-indent: 5px;
+  border: 1px solid #eee;
+  border-radius: 20px;
 }
 
 .vedio_details {
@@ -31,7 +33,7 @@
   margin-top: 10px;
   padding: 15px;
   border: 1px solid #eee;
-  box-shadow: 0 2px 2px -2px grey
+  box-shadow: 0 2px 2px -2px grey;
 }
 
 .vedio_list {
@@ -45,7 +47,7 @@
   height: 422px;
   left: 0px;
   top: 0px;
-  box-shadow: 0 2px 2px -2px grey
+  box-shadow: 0 2px 2px -2px grey;
 }
 
 .vedio_item {
@@ -56,7 +58,7 @@
 .video_title p {
   font-size: 14px;
   margin-top: 0;
-  margin-left: 10px
+  margin-left: 10px;
 }
 
 .video_image {
