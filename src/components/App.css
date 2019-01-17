@@ -12,11 +12,24 @@
   margin-top: 30px
 }
 
+.search-bar input {
+  width: 500px;
+  height: 30px;
+  text-indent: 5px;
+}
+
 .vedio_details {
   grid-area: d;
   display: flex;
   left: 20px;
   flex-direction: column;
+}
+
+.video_descriptions {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #eee
+
 }
 
 .vedio_list {
@@ -51,4 +64,10 @@
 .list_item {
   list-style: none;
   margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+
+.list_item :hover{
+  background: #eee;
 }
