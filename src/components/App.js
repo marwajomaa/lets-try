@@ -15,7 +15,7 @@ class App extends Component {
 
   componentDidMount(){
   this.onVideoSearch("hello")
-}
+  }
 
 onVideoSearch = (searchValue) => {
   YTSearch({key:API_KEY, term:searchValue}, (videos) => {

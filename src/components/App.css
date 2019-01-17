@@ -23,13 +23,15 @@
   display: flex;
   left: 20px;
   flex-direction: column;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .video_descriptions {
   margin-top: 10px;
   padding: 15px;
-  border: 1px solid #eee
-
+  border: 1px solid #eee;
+  box-shadow: 0 2px 2px -2px grey
 }
 
 .vedio_list {
@@ -43,6 +45,7 @@
   height: 422px;
   left: 0px;
   top: 0px;
+  box-shadow: 0 2px 2px -2px grey
 }
 
 .vedio_item {
@@ -50,7 +53,7 @@
   flex-direction: row;
 }
 
-.video_title p{
+.video_title p {
   font-size: 14px;
   margin-top: 0;
   margin-left: 10px
@@ -66,6 +69,8 @@
   margin-bottom: 10px;
   padding: 10px;
   border: 1px solid #eee;
+  box-shadow: 0 2px 2px -2px grey;
+  width: 350px;
 }
 
 .list_item :hover{
