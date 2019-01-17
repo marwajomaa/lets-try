@@ -14,10 +14,10 @@ class SearchBar extends Component {
 
   render(){
    const {handleChange} = this;
-
+   const {search} = this.state;
   return(
     <div className="search-bar">
-     <input type="input" onChange={handleChange} />
+     <input type="input" value={search} onChange={handleChange} />
     </div>
   )
 }
